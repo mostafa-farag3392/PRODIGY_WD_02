@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <div class="theme-toggle">
+            <button id="toggleTheme">Dark Mode</button>
+        </div>
+        <h1>Stopwatch</h1>
+        <div class="timer-display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+        <div class="buttons">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn" disabled>Pause</button>
+            <button id="resetBtn">Reset</button>
+            <button id="lapBtn" disabled>Lap</button>
+        </div>
+        <div class="laps-section">
+            <h2>Laps</h2>
+            <ul id="lapsList"></ul>
+        </div>
+    </div>
+
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to reset the stopwatch?</p>
+            <button id="confirmReset">Yes</button>
+            <button id="cancelReset">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
